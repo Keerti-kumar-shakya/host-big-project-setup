@@ -7,6 +7,7 @@ const Navbar = () => {
       <h2 className='navbar-heading'>Big Projects</h2>
       <img className='image-navbar' src= {website_image} />
     </div>
+    <hr />
    </section>
   )
 }

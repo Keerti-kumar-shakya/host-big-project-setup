@@ -55,12 +55,12 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 }
 
 .navbar-section{
-  border: 1px solid violet;
+
   background-color: var(--clr-primary-10) ;
 }
 
 .navbar-container{
-  border: 1px solid black;
+
   display: grid;
   grid-template-columns:1fr 2fr;
   justify-content: center;
@@ -72,14 +72,14 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 }
 
 .navbar-heading{
-  border: 1px solid red; 
+  
   letter-spacing: 3px;
   font-size: 60px;
   color: var(--clr-grey-2);
 }
 
 .image-navbar{
-  border: 1px solid red; 
+ 
  height: 300px;
   object-fit: contain;
 }
@@ -87,12 +87,11 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 /*********************** Projects ****************************/
 
 .section-projects{
-  border: 1px solid blue;
+ 
   background-color: var(--clr-primary-10) ;
 }
 
 .projects-container{
-  background-color: white;
   padding: 32px 0px;
   max-width: 80rem;
   margin-left: auto;
@@ -106,6 +105,7 @@ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, O
 
 
 .big-project-card{
+  background-color: white;
   box-shadow:  0 0 10px rgb(175, 172, 172);
  border-radius:0.5rem;
  transition: 0.55s;
@@ -182,18 +182,16 @@ span{
 /*********************** ProjectBtn Category ****************************/
 
 .project-btn-category-section {
-  border: 1px solid blue;
+ 
   background-color: var(--clr-primary-10) ;
 }
 
 .project-btn-container{
   padding: 30px;
-  border: 1px solid green;
   max-width: 80rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-
   column-gap: 20px;
  align-items: center;
  justify-content: center;
@@ -219,4 +217,11 @@ span{
 .active-btn{
   color: white;
   background-color: black;
+}
+
+hr{
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+ 
 }

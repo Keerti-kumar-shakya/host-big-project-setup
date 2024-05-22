@@ -7,10 +7,12 @@ import ProjectCategory from "./components/ProjectCategory";
 
 function App() {
 const [data, setData] = useState(bigProjectData);
+const [btn, setBtn] = useState(0)
 
 const projectUniqueCategory = ['all', ...new Set(bigProjectData.map( (projectBtn) => projectBtn.category))]
 
-const setProjectData = (category) => {
+const setProjectData = (category, id) => {
+  setBtn(id)
 
   if (category === 'all') {
     setData(bigProjectData)
@@ -19,8 +21,10 @@ const setProjectData = (category) => {
 
   const uniqueProject = bigProjectData.filter((project) => project.category === category)
   console.log(uniqueProject);
-  setData(uniqueProject)
+  setData(uniqueProject);
+
 }
+
 
   return (
   <main>
@@ -28,6 +32,7 @@ const setProjectData = (category) => {
     <ProjectCategory 
     projectUniqueCategory = {projectUniqueCategory}
     setProjectData = {setProjectData}
+    btn = {btn}
     />
     <Projects ProjectData = {data}/>
   </main>
