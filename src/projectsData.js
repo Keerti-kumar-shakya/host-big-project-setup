@@ -32,23 +32,7 @@ export const bigProjectData = [
 
     desc: `The Comfy Store App is an advanced e-commerce web application designed to provide users with a seamless and enjoyable shopping experience. Utilizing a suite of modern web technologies, this project combines powerful functionality with a visually appealing and intuitive user interface. Key technologies used include React JS, Redux Toolkit, Tailwind CSS, Daisy UI Tailwind, React Query, React Router DOM, React Toastify, Axios, Day.js, and React Icons.
     
-Key Features :-
-
-User Authentication: Secure user authentication and authorization system, enabling users to create accounts, log in, and manage their profiles.
-
-Product Catalog: Comprehensive product catalog with detailed product descriptions, images, and pricing, allowing users to browse and search for items easily.
-
-Shopping Cart: Interactive shopping cart functionality, enabling users to add, remove, and update items, with real-time updates and total price calculations.
-
-Checkout Process: Streamlined and secure checkout process, guiding users through order confirmation and payment steps.
-
-Responsive Design: Ensured the application is fully responsive, providing an optimal viewing experience on a wide range of devices and screen sizes.
-
-Real-Time Data Updates: Leveraged React Query to ensure real-time updates and synchronization of product data, cart status, and user information.
-
-User Notifications: Integrated React Toastify for real-time notifications, enhancing user interaction and feedback.
-
-Elegant UI: Combined Tailwind CSS and Daisy UI to create a visually appealing and consistent design, with a focus on usability and user experience.
+    Key Features :- User Authentication, Product Catalog, Shopping Cart,Checkout Process, Responsive Design, Real-Time Data Updates,User Notifications, Elegant UI.
     `
     ,
     url: 'https://01-big-react-comfy-store-project.netlify.app/',
