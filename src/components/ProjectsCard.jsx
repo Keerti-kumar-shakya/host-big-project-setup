@@ -2,8 +2,9 @@ import { useState } from 'react';
 import { FaGithubSquare} from 'react-icons/fa';
 import { TbWorldWww } from 'react-icons/tb';
 
-const ProjectsCard = ({img, projectNumber, techUsed, desc,url, github, projectName, index}) => {
+const ProjectsCard = ({img, techUsed, desc,url, github, projectName, index}) => {
   const [readMore, setReadMore] = useState(false);
+  const [readMoreTech, setReadMoreTech] = useState(false);
 
   return (
     <article className="big-project-card">
@@ -14,7 +15,12 @@ const ProjectsCard = ({img, projectNumber, techUsed, desc,url, github, projectNa
     
       <p className="project-name"><span>Project name:</span>{projectName}</p>
     
-      <h5 className="technology-used"><span>Technologies used:</span>{techUsed}</h5>
+      <h5 className="technology-used"><span>Technologies used:</span> {readMoreTech? techUsed : `${techUsed.substring(0,20)}...`}
+      <button className='info-btn-tech' onClick={() => setReadMoreTech(!readMoreTech)}>
+          {readMoreTech ? 'show less' : '  read more'}
+        </button>
+      
+      </h5>
     
       <p  className="project-details"><span>Project description:</span>
       {readMore? desc : `${desc.substring(0,150)}...`}
