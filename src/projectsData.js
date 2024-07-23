@@ -2,6 +2,7 @@
 import bImg_1 from './projects-images/01-YouTube-Clone-img-1.png';
 import bImg_2 from './projects-images/02-portfolio-website.png';
 import bImg_3 from './projects-images/03-Comfy-Store-app.png';
+import bImg_4 from './projects-images/04-react-portfolio-website.png';
 import { nanoid } from 'nanoid';
 // small project images
 
@@ -62,6 +63,24 @@ export const bigProjectData = [
   
   },
 
+    // Project: 04;
+
+    {
+      id: nanoid(),
+      category: 'reactJs',
+      img: bImg_4,
+      techUsed: 'React JS and hooks etc',
+  
+      desc: `I have developed a comprehensive portfolio website utilizing ReactJS and hooks, showcasing my proficiency in modern web development techniques. This project demonstrates my ability to create dynamic, responsive, and user-friendly interfaces. Through the effective use of ReactJS and hooks, I have ensured optimal performance and maintainability, highlighting my skills and projects in a visually appealing and accessible manner.
+      `
+      ,
+      url: 'https://04-portfolio-website-big-react.netlify.app/',
+  
+      github: 'https://github.com/Keerti-kumar-shakya/big-react-projects/tree/main/01%20-%20Personel%20portfolio',
+  
+      projectName: 'Portfolio Website'
+    
+    },
 ]
 
 
